@@ -15,13 +15,26 @@ print(row_one)
 print(row_two)
 print(row_thr)
 
-player_input=int(input("What Number? "))
-print(f"You picked {player_input}")
-print()
+range_1=range(1,4)
+range_2=range(3,7)
+range_3=range(6,10)
 
-if player_input in range(1,3):
-    print("Your in row one!")
-elif player_input in range(4,6):
-    print("Your in row two!")
-elif player_input in range(7,9):
-    print("Your in row three!")
+def player_one_input():
+    player_input=int(input("What Number? "))
+    print(f"You picked {player_input}")
+    print()
+    return player_input
+
+def row_parser():
+    if player_input in range_1:
+        print("Your in row one!")
+        print()
+    elif player_input in range_2:
+        print("Your in row two!")
+        print()
+    elif player_input in range_3:
+        print("Your in row three!")
+        print()
+    else:
+        print("Not Valid")
+row_parser()
