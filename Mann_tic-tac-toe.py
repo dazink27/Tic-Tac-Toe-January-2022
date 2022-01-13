@@ -129,12 +129,12 @@ def victory_check():
     print(f"row one contains {simplified_row}")
     if simplified_row==1:
         print("Victory Achieved!")
-        victory_achieved=True
+        victory_achieved=1
         return victory_achieved
     else:
         pass
 
-while victory_achieved != True:
+while victory_achieved != 1:
     X_player_turn()
     show_table()
 # O_player_turn()
